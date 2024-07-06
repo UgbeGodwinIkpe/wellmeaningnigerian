@@ -320,6 +320,60 @@
 }
 
 
+/* Before footer section */
+
+@keyframes bfooter {
+    0% {
+        top: 280px;
+        /* content: "Arise O'compatriot" */
+    }
+    50% {
+        top: 150px;
+        animation-timing-function: ease-in-out;
+        content: "Arise O Compatriots";
+    }
+}
+
+@keyframes bfooterbtn {
+    0% {
+        top: 300px;
+    }
+    50% {
+        top: 170px;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+#bfooter {
+    background-image: url(../img/about1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* cover !important; */
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    color: white !important;
+}
+
+#bfooter-text:before {
+    content: "Corruption and Injustity Has Eaten Deep Into Our Society";
+    position: relative;
+    animation-name: bfooter;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#footerbtn {
+    position: relative;
+    top: 5px;
+    animation-name: bfooterbtn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
 /*** Footer ***/
 
 .footer .btn.btn-link {
@@ -349,6 +403,18 @@
 }
 
 .copyright {
+    background: #092139;
+}
+
+.copyright a {
+    color: var(--primary);
+}
+
+.copyright a:hover {
+    color: var(--light);
+}
+
+copyright {
     background: #092139;
 }
 
